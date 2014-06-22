@@ -1,9 +1,9 @@
 ## This is my solution to homework assignment 2 in "R
 ## programming". These two functions allow to use an extension of a
-## matrix with its own inverse, If accessed multiple time, the inverse
+## matrix with its own inverse. If accessed multiple time, the inverse
 ## of the matrix does not need to be recomputed.
 
-## initiailizes the generalized matrix object together with some computation methods
+## initializes the generalized matrix object together with some computation methods
  makeCacheMatrix <- function(x = matrix()) {
  invMatrix <- NULL;
  set <- function(a) {
@@ -18,7 +18,7 @@
 
 
 ## This is the extension of the regular "solve" method for the cached
-## matrices Return a matrix that is the inverse of 'x'. If x has value
+## matrices. Return a matrix that is the inverse of 'x'. If x has value
 ## cached, return it, otherwise compute and store it.
 cacheSolve <- function(x, ...) {
    
